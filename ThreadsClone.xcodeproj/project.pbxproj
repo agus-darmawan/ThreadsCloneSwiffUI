@@ -15,6 +15,8 @@
 		C93A01982C05F9AB00FDBC65 /* ThreadsCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01972C05F9AB00FDBC65 /* ThreadsCloneUITests.swift */; };
 		C93A019A2C05F9AB00FDBC65 /* ThreadsCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01992C05F9AB00FDBC65 /* ThreadsCloneUITestsLaunchTests.swift */; };
 		C93A01B02C05FD8F00FDBC65 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01AF2C05FD8F00FDBC65 /* LoginView.swift */; };
+		C93A01B42C06094C00FDBC65 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01B32C06094C00FDBC65 /* RegistrationView.swift */; };
+		C93A01B82C060C5200FDBC65 /* ThreadsTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01B72C060C5200FDBC65 /* ThreadsTextViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		C93A01972C05F9AB00FDBC65 /* ThreadsCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneUITests.swift; sourceTree = "<group>"; };
 		C93A01992C05F9AB00FDBC65 /* ThreadsCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C93A01AF2C05FD8F00FDBC65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C93A01B32C06094C00FDBC65 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C93A01B72C060C5200FDBC65 /* ThreadsTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		C93A01AB2C05FA5B00FDBC65 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C93A01B62C060C3200FDBC65 /* ViewModifier */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -198,8 +203,17 @@
 			isa = PBXGroup;
 			children = (
 				C93A01AF2C05FD8F00FDBC65 /* LoginView.swift */,
+				C93A01B32C06094C00FDBC65 /* RegistrationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C93A01B62C060C3200FDBC65 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				C93A01B72C060C5200FDBC65 /* ThreadsTextViewModifier.swift */,
+			);
+			path = ViewModifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +349,8 @@
 				C93A01B02C05FD8F00FDBC65 /* LoginView.swift in Sources */,
 				C93A017F2C05F9A900FDBC65 /* ContentView.swift in Sources */,
 				C93A017D2C05F9A900FDBC65 /* ThreadsCloneApp.swift in Sources */,
+				C93A01B82C060C5200FDBC65 /* ThreadsTextViewModifier.swift in Sources */,
+				C93A01B42C06094C00FDBC65 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
