@@ -49,7 +49,9 @@ struct LoginView: View {
                 Spacer()
                 
                 Divider()
-                Button {
+                NavigationLink {
+                    RegistrationView()
+                        .navigationBarBackButtonHidden(true)
                 } label:{
                     HStack(spacing : 4) {
                         Text("Don't have an account?")
@@ -65,8 +67,6 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
+#Preview {
+    LoginView()
 }

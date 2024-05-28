@@ -15,5 +15,6 @@ struct ThreadsTextViewModifier: ViewModifier{
             .background(Color(.systemGray6))
             .cornerRadius(10)
             .padding(.horizontal, 24)
+            .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
     }
 }
