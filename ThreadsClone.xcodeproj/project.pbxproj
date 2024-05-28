@@ -17,6 +17,7 @@
 		C93A01B02C05FD8F00FDBC65 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01AF2C05FD8F00FDBC65 /* LoginView.swift */; };
 		C93A01B42C06094C00FDBC65 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01B32C06094C00FDBC65 /* RegistrationView.swift */; };
 		C93A01B82C060C5200FDBC65 /* ThreadsTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01B72C060C5200FDBC65 /* ThreadsTextViewModifier.swift */; };
+		C93A01BF2C06260F00FDBC65 /* ThreadTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A01BE2C06260F00FDBC65 /* ThreadTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C93A01AF2C05FD8F00FDBC65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C93A01B32C06094C00FDBC65 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C93A01B72C060C5200FDBC65 /* ThreadsTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextViewModifier.swift; sourceTree = "<group>"; };
+		C93A01BE2C06260F00FDBC65 /* ThreadTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +150,9 @@
 		C93A01A72C05FA2C00FDBC65 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				C93A01AD2C05FD2E00FDBC65 /* Root */,
 				C93A01AC2C05FD1E00FDBC65 /* Autentication */,
+				C93A01AD2C05FD2E00FDBC65 /* Root */,
+				C93A01BD2C0625CF00FDBC65 /* TabBar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -214,6 +217,14 @@
 				C93A01B72C060C5200FDBC65 /* ThreadsTextViewModifier.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		C93A01BD2C0625CF00FDBC65 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C93A01BE2C06260F00FDBC65 /* ThreadTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93A01BF2C06260F00FDBC65 /* ThreadTabView.swift in Sources */,
 				C93A01B02C05FD8F00FDBC65 /* LoginView.swift in Sources */,
 				C93A017F2C05F9A900FDBC65 /* ContentView.swift in Sources */,
 				C93A017D2C05F9A900FDBC65 /* ThreadsCloneApp.swift in Sources */,
