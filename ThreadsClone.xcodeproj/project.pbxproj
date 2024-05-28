@@ -94,7 +94,12 @@
 		C93A017B2C05F9A900FDBC65 /* ThreadsClone */ = {
 			isa = PBXGroup;
 			children = (
-				C93A017C2C05F9A900FDBC65 /* ThreadsCloneApp.swift */,
+				C93A01AB2C05FA5B00FDBC65 /* Utils */,
+				C93A01AA2C05FA4F00FDBC65 /* Services */,
+				C93A01A92C05FA4200FDBC65 /* Extensions */,
+				C93A01A82C05FA3A00FDBC65 /* Model */,
+				C93A01A72C05FA2C00FDBC65 /* Core */,
+				C93A01A62C05FA2100FDBC65 /* App */,
 				C93A017E2C05F9A900FDBC65 /* ContentView.swift */,
 				C93A01802C05F9AB00FDBC65 /* Assets.xcassets */,
 				C93A01822C05F9AB00FDBC65 /* Preview Content */,
@@ -125,6 +130,49 @@
 				C93A01992C05F9AB00FDBC65 /* ThreadsCloneUITestsLaunchTests.swift */,
 			);
 			path = ThreadsCloneUITests;
+			sourceTree = "<group>";
+		};
+		C93A01A62C05FA2100FDBC65 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C93A017C2C05F9A900FDBC65 /* ThreadsCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C93A01A72C05FA2C00FDBC65 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C93A01A82C05FA3A00FDBC65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C93A01A92C05FA4200FDBC65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C93A01AA2C05FA4F00FDBC65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C93A01AB2C05FA5B00FDBC65 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
