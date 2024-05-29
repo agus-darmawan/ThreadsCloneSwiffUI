@@ -15,33 +15,7 @@ struct ExploreView: View {
                 LazyVStack {
                     ForEach(0 ... 10, id :\.self){thread in
                         VStack {
-                            HStack {
-                                Image("user-profile")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 40,height: 40)
-                                    .clipShape(Circle())
-                                VStack(alignment: .leading){
-                                    Text("niwayannia21")
-                                        .fontWeight(.semibold)
-                                    Text("Wayan Nia")
-                                }
-                                .font(.footnote)
-                                
-                                Spacer()
-                                
-                                Text("Follow")
-                                    .font(.subheadline)
-                                    .fontWeight(.semibold)
-                                    .frame(width: 100, height: 32)
-                                    .overlay{
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color(.systemGray4),lineWidth: 1)
-                                        
-                                    }
-                            }
-                            .padding(.horizontal)
-                            
+                            UserCell()
                             Divider()
                         }
                         .padding(.vertical,4)
