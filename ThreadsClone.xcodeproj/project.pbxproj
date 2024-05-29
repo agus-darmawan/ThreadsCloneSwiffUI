@@ -162,6 +162,7 @@
 		C93A01A72C05FA2C00FDBC65 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C93A01DB2C06D91000FDBC65 /* Components */,
 				C93A01D52C062EF400FDBC65 /* Activity */,
 				C93A01AC2C05FD1E00FDBC65 /* Autentication */,
 				C93A01C52C062D3500FDBC65 /* Explore */,
@@ -323,6 +324,13 @@
 				C93A01D72C062F1700FDBC65 /* ActivityView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C93A01DB2C06D91000FDBC65 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
