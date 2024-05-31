@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9107C3D2C0A012900088616 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9107C3C2C0A012900088616 /* EditProfileView.swift */; };
 		C93A017D2C05F9A900FDBC65 /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A017C2C05F9A900FDBC65 /* ThreadsCloneApp.swift */; };
 		C93A017F2C05F9A900FDBC65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A017E2C05F9A900FDBC65 /* ContentView.swift */; };
 		C93A01812C05F9AB00FDBC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93A01802C05F9AB00FDBC65 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9107C3C2C0A012900088616 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		C93A01792C05F9A900FDBC65 /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93A017C2C05F9A900FDBC65 /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		C93A017E2C05F9A900FDBC65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9107C3A2C0A010700088616 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				C9107C3B2C0A011800088616 /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		C9107C3B2C0A011800088616 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9107C3C2C0A012900088616 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C93A01702C05F9A900FDBC65 = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +321,7 @@
 		C93A01CD2C062E1E00FDBC65 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C9107C3A2C0A010700088616 /* EditProfile */,
 				C996483E2C09F1A9008F8809 /* Modal */,
 				C93A01CE2C062E2B00FDBC65 /* View */,
 			);
@@ -482,6 +501,7 @@
 			files = (
 				C93A01D82C062F1700FDBC65 /* ActivityView.swift in Sources */,
 				C93A01C42C062C9700FDBC65 /* FeedView.swift in Sources */,
+				C9107C3D2C0A012900088616 /* EditProfileView.swift in Sources */,
 				C93A01BF2C06260F00FDBC65 /* ThreadTabView.swift in Sources */,
 				C93A01DA2C06C19E00FDBC65 /* ThreadCell.swift in Sources */,
 				C93A01D22C062EAF00FDBC65 /* ProfileView.swift in Sources */,
