@@ -200,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				C9107C692C0AF66B00088616 /* ViewModel */,
-				C9107C5E2C0AD29800088616 /* CurrentUserProfileViewModel.swift */,
 				C9107C662C0AF5F000088616 /* View */,
 			);
 			path = CurrentUserProfile;
@@ -217,6 +216,7 @@
 		C9107C692C0AF66B00088616 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C9107C5E2C0AD29800088616 /* CurrentUserProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

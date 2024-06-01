@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct EditProfileView: View {
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
+    @Environment (\.dismiss) var dismis
+    @EnvironmentObject var viewModal: CurrentUserProfileViewModel
     var body: some View {
         NavigationStack{
             ZStack{
@@ -26,7 +29,17 @@ struct EditProfileView: View {
                             Text("Ni Wayan Nia")
                         }
                         Spacer()
-                        CircularProfileImageView()
+                        PhotosPicker(selection: $viewModal.selectedItem){
+                            if let image = viewModal.profileImage{
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                            }else {
+                                CircularProfileImageView()
+                            }
+                        }
                     }
                     Divider()
                     
@@ -60,7 +73,9 @@ struct EditProfileView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {
+                        dismis()
+                    }, label: {
                         Text("Cancel")
                     })
                     .font(.subheadline)
