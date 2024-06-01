@@ -83,7 +83,12 @@ struct EditProfileView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {
+                        Task{
+                            try await viewModel.updateUserData()
+                            dismis()
+                        }
+                    }, label: {
                         Text("Done")
                     })
                     .font(.subheadline)
