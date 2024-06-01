@@ -13,7 +13,7 @@ struct EditProfileView: View {
     @State private var link = ""
     @State private var isPrivateProfile = false
     @Environment (\.dismiss) var dismis
-    @EnvironmentObject var viewModal: CurrentUserProfileViewModel
+    @StateObject var viewModel = EditProfileViewModel()
     var body: some View {
         NavigationStack{
             ZStack{
@@ -29,8 +29,8 @@ struct EditProfileView: View {
                             Text("Ni Wayan Nia")
                         }
                         Spacer()
-                        PhotosPicker(selection: $viewModal.selectedItem){
-                            if let image = viewModal.profileImage{
+                        PhotosPicker(selection: $viewModel.selectedItem){
+                            if let image = viewModel.profileImage{
                                 image
                                     .resizable()
                                     .scaledToFill()
