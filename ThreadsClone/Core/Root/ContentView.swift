@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var viewModel = ContentViewModel()
+    @StateObject var viewModel = ContentViewModel()
+    
     var body: some View {
         Group {
-            if viewModel.userSesion != nil {
+            if viewModel.userSession != nil {
                 ThreadTabView()
             } else {
                 LoginView()

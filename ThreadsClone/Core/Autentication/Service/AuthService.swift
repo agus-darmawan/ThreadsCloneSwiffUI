@@ -17,12 +17,19 @@ class AuthService {
     
     @MainActor
     func login(withEmail email : String, password : String) async throws{
-        
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            self.userSession = result.user
+            print("Debug create user : \(result.user.uid)")
+        } catch {
+            print("Debug error create user \(error.localizedDescription)")
+        }
     }
     
     func createUser(withEmail email : String, password : String, fullname: String, username: String) async throws{
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            self.userSession = result.user
             print("Debug create user : \(result.user.uid)")
         } catch {
             print("Debug error create user \(error.localizedDescription)")
