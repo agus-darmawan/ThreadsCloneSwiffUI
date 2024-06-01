@@ -52,6 +52,7 @@
 		C99A370C2C0B2BA000F7E20D /* ThreadCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A370B2C0B2BA000F7E20D /* ThreadCreateViewModel.swift */; };
 		C99A370E2C0B2BC300F7E20D /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A370D2C0B2BC300F7E20D /* ThreadService.swift */; };
 		C99A37142C0B34B500F7E20D /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A37132C0B34B500F7E20D /* FeedViewModel.swift */; };
+		C99A37182C0B3C9200F7E20D /* UserContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A37172C0B3C9200F7E20D /* UserContentListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		C99A370B2C0B2BA000F7E20D /* ThreadCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCreateViewModel.swift; sourceTree = "<group>"; };
 		C99A370D2C0B2BC300F7E20D /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		C99A37132C0B34B500F7E20D /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		C99A37172C0B3C9200F7E20D /* UserContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +241,8 @@
 		C9107C6A2C0AFA9D00088616 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C9107C6D2C0AFF9200088616 /* UserContentListView.swift */,
-				C9107C6B2C0AFCF400088616 /* ProfileHeaderView.swift */,
+				C99A37162C0B3C7200F7E20D /* ViewModel */,
+				C99A37152C0B3C6C00F7E20D /* View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -540,6 +542,23 @@
 			path = FeedModel;
 			sourceTree = "<group>";
 		};
+		C99A37152C0B3C6C00F7E20D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9107C6D2C0AFF9200088616 /* UserContentListView.swift */,
+				C9107C6B2C0AFCF400088616 /* ProfileHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C99A37162C0B3C7200F7E20D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C99A37172C0B3C9200F7E20D /* UserContentListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -696,6 +715,7 @@
 				C9107C6E2C0AFF9200088616 /* UserContentListView.swift in Sources */,
 				C93A01DE2C06DD2F00FDBC65 /* CircularProfileImageView.swift in Sources */,
 				C9107C582C0ABE1200088616 /* LoginViewModel.swift in Sources */,
+				C99A37182C0B3C9200F7E20D /* UserContentListViewModel.swift in Sources */,
 				C99A370C2C0B2BA000F7E20D /* ThreadCreateViewModel.swift in Sources */,
 				C93A01E02C06DDDA00FDBC65 /* UserCell.swift in Sources */,
 				C93A01B02C05FD8F00FDBC65 /* LoginView.swift in Sources */,
