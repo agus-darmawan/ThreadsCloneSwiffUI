@@ -20,13 +20,18 @@ struct CurrentUserProfileView: View {
                     ProfileHeaderView(user: currentUser)
             
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Text("Follow")
+                        Text("Edit profile")
                             .font(.subheadline)
                             .fontWeight(.semibold)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .frame(width: 352, height: 32)
-                            .background(.black)
+                            .background(.white)
                             .cornerRadius(8)
+                            .overlay{
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(.systemGray4),lineWidth: 1)
+                            }
+                        
                     })
                     UserContentListView()
                 }

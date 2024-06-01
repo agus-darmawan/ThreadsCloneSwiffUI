@@ -24,18 +24,9 @@ struct ProfileView: View {
                         .cornerRadius(8)
                 })
                 UserContentListView()
-    
             }
         }
-        .toolbar{
-            ToolbarItem(placement: .navigationBarTrailing){
-                Button(action: {
-                    AuthService.shared.signOut()
-                }, label: {
-                    Image(systemName: "line.3.horizontal")
-                })
-            }
-        }
+        .navigationBarTitleDisplayMode(.inline)
         .padding(.horizontal)
     }
 }

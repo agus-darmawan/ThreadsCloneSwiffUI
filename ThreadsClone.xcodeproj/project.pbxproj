@@ -450,17 +450,17 @@
 				C9107C5D2C0AD28100088616 /* ViewModel */,
 				C9107C3A2C0A010700088616 /* EditProfile */,
 				C996483E2C09F1A9008F8809 /* Modal */,
-				C93A01CE2C062E2B00FDBC65 /* View */,
+				C93A01CE2C062E2B00FDBC65 /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		C93A01CE2C062E2B00FDBC65 /* View */ = {
+		C93A01CE2C062E2B00FDBC65 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
 				C93A01D12C062EAF00FDBC65 /* ProfileView.swift */,
 			);
-			path = View;
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		C93A01D52C062EF400FDBC65 /* Activity */ = {
