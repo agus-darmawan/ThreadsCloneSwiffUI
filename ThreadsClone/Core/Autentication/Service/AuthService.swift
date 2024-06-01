@@ -28,4 +28,9 @@ class AuthService {
             print("Debug error create user \(error.localizedDescription)")
         }
     }
+    
+    func signOut() {
+        try? Auth.auth().signOut()
+        self.userSession = nil
+    }
 }
