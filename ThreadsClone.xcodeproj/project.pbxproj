@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C9107C3D2C0A012900088616 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9107C3C2C0A012900088616 /* EditProfileView.swift */; };
-		C9107C3F2C0A97AB00088616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9107C3E2C0A97AB00088616 /* GoogleService-Info.plist */; };
 		C9107C422C0A9A1600088616 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C9107C412C0A9A1600088616 /* FirebaseAuth */; };
 		C9107C442C0A9A1600088616 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C9107C432C0A9A1600088616 /* FirebaseFirestore */; };
 		C9107C462C0A9A1600088616 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9107C452C0A9A1600088616 /* FirebaseFirestoreSwift */; };
 		C9107C482C0A9A1600088616 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C9107C472C0A9A1600088616 /* FirebaseStorage */; };
+		C9107C4A2C0A9E5A00088616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9107C492C0A9E5A00088616 /* GoogleService-Info.plist */; };
 		C93A017D2C05F9A900FDBC65 /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A017C2C05F9A900FDBC65 /* ThreadsCloneApp.swift */; };
 		C93A017F2C05F9A900FDBC65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A017E2C05F9A900FDBC65 /* ContentView.swift */; };
 		C93A01812C05F9AB00FDBC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93A01802C05F9AB00FDBC65 /* Assets.xcassets */; };
@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		C9107C3C2C0A012900088616 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
-		C9107C3E2C0A97AB00088616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9107C492C0A9E5A00088616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C93A01792C05F9A900FDBC65 /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93A017C2C05F9A900FDBC65 /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		C93A017E2C05F9A900FDBC65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,8 +155,8 @@
 				C93A01822C05F9AB00FDBC65 /* Preview Content */,
 				C93A01AA2C05FA4F00FDBC65 /* Services */,
 				C93A01AB2C05FA5B00FDBC65 /* Utils */,
-				C9107C3E2C0A97AB00088616 /* GoogleService-Info.plist */,
 				C93A01802C05F9AB00FDBC65 /* Assets.xcassets */,
+				C9107C492C0A9E5A00088616 /* GoogleService-Info.plist */,
 			);
 			path = ThreadsClone;
 			sourceTree = "<group>";
@@ -495,7 +495,7 @@
 			files = (
 				C93A01842C05F9AB00FDBC65 /* Preview Assets.xcassets in Resources */,
 				C93A01812C05F9AB00FDBC65 /* Assets.xcassets in Resources */,
-				C9107C3F2C0A97AB00088616 /* GoogleService-Info.plist in Resources */,
+				C9107C4A2C0A9E5A00088616 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
