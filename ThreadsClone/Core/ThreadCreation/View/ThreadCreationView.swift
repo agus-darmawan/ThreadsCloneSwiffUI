@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ThreadCreationView: View {
+    @StateObject var viewModal = ThreadCreateViewModel()
     @State public var caption = ""
     @Environment (\.dismiss) var dismis
+    
+    private var user: User? {
+        return UserService.shared.currentUser
+    }
     var body: some View {
         NavigationStack {
             VStack{
                 HStack(alignment: .top){
-                    CircularProfileImageView()
+                    CircularProfileImageView(user: user, size: .small)
                     VStack(alignment:.leading, spacing: 4){
-                        Text("Ni Wayan Nia")
+                        Text(user?.username ?? "")
                             .fontWeight(.semibold)
                         TextField("Start a thread", text: $caption, axis: .vertical)
                         
@@ -26,14 +31,14 @@ struct ThreadCreationView: View {
                     Spacer()
                     
                     if !caption.isEmpty{
-                        Button(action: {
+                        Button {
                             caption = ""
-                        }, label: {
+                        } label: {
                             Image(systemName: "xmark")
                                 .resizable()
                                 .frame(width: 12, height: 12)
                                 .foregroundColor(.gray)
-                        })
+                        }
                     }
                 }
                 Spacer()
@@ -43,18 +48,18 @@ struct ThreadCreationView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
-                    Button(action: {
+                    Button("Cancel") {
                         dismis()
-                    }, label: {
-                        Text("Cancel")
-                    })
+                    }
                     .font(.subheadline)
                     .foregroundColor(.black)
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Text("Post")
-                    })
+                    Button("Post") {
+                        Task{try await viewModal.uploadThread(caption: caption)
+                            dismis()
+                        }
+                    }
                     .opacity(caption.isEmpty ? 0.5 : 1.0)
                     .disabled(caption.isEmpty)
                     .font(.subheadline)
@@ -66,6 +71,8 @@ struct ThreadCreationView: View {
     }
 }
 
+
 #Preview {
-    ThreadCreationView()
+    ThreadCreationView ()
 }
+
