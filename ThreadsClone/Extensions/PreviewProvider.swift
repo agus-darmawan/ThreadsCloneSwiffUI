@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 extension PreviewProvider {
     static var dev: DeveloperPreview {
@@ -15,6 +16,7 @@ extension PreviewProvider {
 
 class DeveloperPreview {
     static let shared = DeveloperPreview()
+    
     let user = User(
         id: NSUUID().uuidString,
         fullname: "Agus Darmawan", 
@@ -22,5 +24,12 @@ class DeveloperPreview {
         username: "agusdarmawn",
         profileImageUrl: nil,
         bio: nil
+    )
+    
+    let thread = Thread(
+        onwerUid:"123",
+        caption: "Lorem ipsum",
+        timestamp: Timestamp(),
+        likes: 0
     )
 }
