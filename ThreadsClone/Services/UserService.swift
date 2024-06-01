@@ -23,4 +23,8 @@ class UserService {
         let user = try snapshoot.data(as: User.self)
         self.currentUser = user
     }
+    
+    func reset(){
+        self.currentUser = nil
+    }
 }
