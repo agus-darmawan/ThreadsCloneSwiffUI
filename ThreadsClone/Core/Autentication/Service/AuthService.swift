@@ -8,8 +8,13 @@
 import Firebase
 
 class AuthService {
-    
+    @Published var userSession: FirebaseAuth.User?
     static let shared = AuthService()
+    
+    init(userSession: FirebaseAuth.User? = nil) {
+        self.userSession = Auth.auth().currentUser
+    }
+    
     @MainActor
     func login(withEmail email : String, password : String) async throws{
         
